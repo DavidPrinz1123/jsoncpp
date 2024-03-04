@@ -1,9 +1,3 @@
-//Erstellen des Programm
-//mkdir build
-//cd build
-//cmake -DCMAKE_BUILD_TYPE=Debug -G Ninja ..
-//ninja
-//Alternativ diesen Ordner mit VSCode oeffnen
 #include <config.h>
 
 #include <pathtest.h>
@@ -18,6 +12,13 @@ using namespace std;
 namespace fs = std::filesystem;
 
 #include <jsoncpp/json/json.h>
+// Hilfetext (David Prinz)
+const char * const HilfeText = {
+    "Usage: options [OPTIONS] file ... \n" \
+    "-h, --help         Hier die Funktion, die beschrieben werden muessen\n" \
+    "\n" \
+    "For more information contact david.prinz1123@gmail.com"
+};
 
 int main(const int argc, const char **argv) {
 
@@ -62,3 +63,4 @@ int main(const int argc, const char **argv) {
         return EXIT_SUCCESS;
     }
 }
+//test
